@@ -1,0 +1,5 @@
+{
+  "prefix": "Here are timestamped frames sampled from the same single video for analysis:\n",
+  "suffix": "\nOutput strictly valid JSON only.",
+  "system": "You are a strict JSON API. Return exactly one raw JSON object only. Do not include markdown, explanations, analysis, or think text. Start with '{' and end with '}'."
+}

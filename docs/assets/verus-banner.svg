@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="350" viewBox="0 0 1280 350" role="img" aria-labelledby="title desc">
+  <title id="title">Verus-Insight</title><desc id="desc">Towards Explainable Artifact Detection in AI-Generated Videos. Inspection Planning, Evidence Verification, Evidence Aggregation.</desc>
+  <rect width="1280" height="350" rx="16" fill="#faf9f5"/>
+  <path d="M48 41h1184M48 309h1184" fill="none" stroke="#dfe4db"/>
+  <text x="64" y="78" fill="#61716a" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">VIDEO FORENSICS · HUMAN-ANCHORED EVIDENCE</text>
+  <text x="60" y="170" fill="#163c34" font-family="Arial, sans-serif" font-size="78" letter-spacing="-3">Verus-<tspan fill="#ae5936" font-family="Georgia, serif" font-style="italic">Insight</tspan></text>
+  <text x="64" y="218" fill="#163c34" font-family="Arial, sans-serif" font-size="23">Towards Explainable Artifact Detection in AI-Generated Videos</text>
+  <text x="64" y="271" fill="#61716a" font-family="Arial, sans-serif" font-size="15">Inspection Planning <tspan fill="#ae5936">→</tspan> Evidence Verification <tspan fill="#ae5936">→</tspan> Evidence Aggregation</text>
+  <path d="M1040 97l62 126 62-126" fill="none" stroke="#163c34" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1164" cy="96" r="13" fill="#ae5936"/>
+  <text x="1102" y="276" text-anchor="middle" fill="#61716a" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">8B · INFERENCE</text>
+</svg>

@@ -1,0 +1,220 @@
+{
+  "model": "Verus-Insight",
+  "backend": "transformers",
+  "input": {
+    "video": "pole_cam.mp4",
+    "sha256": "09b029a31bf611cc7fb822b9f5f3281e0b79f7fcbe67893bd8ed8ef39d22a477",
+    "start_seconds": 8.47,
+    "end_seconds": 13.47,
+    "sampling_fps": 4.0,
+    "num_frames": 20,
+    "timestamps_seconds": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75,
+      2.0,
+      2.25,
+      2.5,
+      2.75,
+      3.0,
+      3.25,
+      3.5,
+      3.75,
+      4.0,
+      4.25,
+      4.5,
+      4.75
+    ],
+    "prompt_sha256": "69cfffed6a70a102ef4fcf544ed8bdbdfd81767c3741a60938d0fe9a2d06c2d6"
+  },
+  "parameters": {
+    "do_sample": false,
+    "max_new_tokens": 8192,
+    "min_pixels": 3136,
+    "max_pixels": 65536
+  },
+  "usage": {
+    "prompt_tokens": 1331,
+    "completion_tokens": 1086
+  },
+  "runtime": {
+    "torch": "2.11.0+cu129",
+    "transformers": "5.12.1",
+    "dtype": "bfloat16",
+    "attention": "sdpa"
+  },
+  "elapsed_seconds": 103.857,
+  "raw_text": "{\"stage_targets\":{\"video_describe\":{\"audit_target_contract\":{\"commonsense_applies\":true,\"presentation_claim\":\"A helmeted skier wearing red goggles and a backpack holds a camera while standing on a snowy mountain ridge, with distant snow-covered peaks and blue sky in the background.\",\"fake_requires_grounded_evidence\":true},\"brief_video_summary\":\"A helmeted skier wearing red goggles and a backpack holds a camera while standing on a snowy mountain ridge, with distant snow-covered peaks and blue sky in the background.\"},\"domain_selection\":{\"selected_domains\":[\"human motion and posture\",\"headgear and accessory consistency\",\"background geometry\"]},\"rubric\":{\"items\":[{\"rubric_id\":\"r1\",\"target_entities\":[\"skier's helmet and goggles\"],\"what_to_verify\":\"Do the helmet and goggles maintain consistent shape, position, and occlusion relative to the skier’s head across all frames?\",\"where_to_look\":{\"timestamp\":[0.0,4.75],\"spatial_hint\":\"skier's head and upper torso\"},\"domain\":\"headgear and accessory consistency\",\"anomaly_definition\":\"An anomaly would be unexplained deformation, detachment, sliding, or inconsistent occlusion of the helmet or goggles relative to the head.\",\"minimum_checks\":[\"Compare the helmet outline and strap placement across early, middle, and late frames.\",\"Track the goggles relative to the helmet and visible facial features during head turns.\",\"Inspect the helmet-to-head boundary for discontinuities or inconsistent occlusion.\"]},{\"rubric_id\":\"r2\",\"target_entities\":[\"skier’s arm and hand holding camera\"],\"what_to_verify\":\"Does the skier’s arm and hand maintain a consistent, physically plausible grip and orientation relative to the camera across all frames?\",\"where_to_look\":{\"timestamp\":[0.0,4.75],\"spatial_hint\":\"skier’s right arm and hand\"},\"domain\":\"human motion and posture\",\"anomaly_definition\":\"An anomaly would be an abrupt grip change, implausible joint configuration, detached hand, or inconsistent camera orientation relative to the arm.\",\"minimum_checks\":[\"Track the hand-to-camera connection across the sequence.\",\"Compare elbow and wrist positions during the skier's small posture changes.\",\"Check that the camera remains oriented toward the skier's face as the arm moves.\"]},{\"rubric_id\":\"r3\",\"target_entities\":[\"distant mountain ridgelines\",\"snow-covered peaks\"],\"what_to_verify\":\"Whether the background mountain contours retain coherent geometry as the skier moves.\",\"where_to_look\":{\"timestamp\":[0.0,4.75],\"spatial_hint\":null},\"domain\":\"background geometry\",\"anomaly_definition\":\"An anomaly would be unexplained warping, duplication, or discontinuous displacement of the distant mountain ridgelines.\",\"minimum_checks\":[\"Compare prominent ridge peaks at the beginning, middle, and end of the clip.\",\"Check that the ridgelines remain spatially coherent relative to the sky and foreground slope.\"]}],\"deprioritized\":[]},\"audit\":{\"findings\":[{\"rubric_ref\":\"r1\",\"timestamp\":[0.0,4.75],\"keyframe_time\":null,\"bbox\":null,\"frame_boxes\":[],\"observation\":\"Helmet and goggles remain fixed in position and shape, with no warping, sliding, or inconsistent occlusion relative to the head.\",\"counterevidence_tests\":[],\"violated_rule\":null,\"verification_result\":\"normal\",\"evidence_strength\":\"weak\",\"polarity\":\"neutral\",\"evidence_type\":\"normal_evidence\",\"knowledge_dependency\":\"visual_only\"},{\"rubric_ref\":\"r2\",\"timestamp\":[0.0,4.75],\"keyframe_time\":null,\"bbox\":null,\"frame_boxes\":[],\"observation\":\"Hand remains in a stable, continuous grip on the camera; arm angle and position change smoothly with body movement.\",\"counterevidence_tests\":[],\"violated_rule\":null,\"verification_result\":\"normal\",\"evidence_strength\":\"weak\",\"polarity\":\"neutral\",\"evidence_type\":\"normal_evidence\",\"knowledge_dependency\":\"visual_only\"},{\"rubric_ref\":\"r3\",\"timestamp\":[0.0,4.75],\"keyframe_time\":null,\"bbox\":null,\"frame_boxes\":[],\"observation\":\"The distant mountain ridgelines retain consistent contours and relative placement throughout the clip.\",\"counterevidence_tests\":[],\"violated_rule\":null,\"verification_result\":\"normal\",\"evidence_strength\":\"moderate\",\"polarity\":\"neutral\",\"evidence_type\":\"normal_evidence\",\"knowledge_dependency\":\"visual_only\"}],\"evidence_assessment\":[{\"rubric_ref\":\"r1\",\"evidence_direction\":\"neutral\",\"reason\":\"Helmet and goggles remain fixed in position and shape, with no warping, sliding, or inconsistent occlusion relative to the head.\"},{\"rubric_ref\":\"r2\",\"evidence_direction\":\"neutral\",\"reason\":\"Hand remains in a stable, continuous grip on the camera; arm angle and position change smoothly with body movement.\"},{\"rubric_ref\":\"r3\",\"evidence_direction\":\"neutral\",\"reason\":\"The distant mountain ridgelines retain consistent contours and relative placement throughout the clip.\"}],\"aggregation\":\"Other inspected observations: Helmet and goggles remain fixed in position and shape, with no warping, sliding, or inconsistent occlusion relative to the head. Hand remains in a stable, continuous grip on the camera; arm angle and position change smoothly with body movement. The distant mountain ridgelines retain consistent contours and relative placement throughout the clip.\",\"verdict\":\"real\",\"confidence\":\"medium\"}}}",
+  "parsed_output": {
+    "stage_targets": {
+      "video_describe": {
+        "audit_target_contract": {
+          "commonsense_applies": true,
+          "presentation_claim": "A helmeted skier wearing red goggles and a backpack holds a camera while standing on a snowy mountain ridge, with distant snow-covered peaks and blue sky in the background.",
+          "fake_requires_grounded_evidence": true
+        },
+        "brief_video_summary": "A helmeted skier wearing red goggles and a backpack holds a camera while standing on a snowy mountain ridge, with distant snow-covered peaks and blue sky in the background."
+      },
+      "domain_selection": {
+        "selected_domains": [
+          "human motion and posture",
+          "headgear and accessory consistency",
+          "background geometry"
+        ]
+      },
+      "rubric": {
+        "items": [
+          {
+            "rubric_id": "r1",
+            "target_entities": [
+              "skier's helmet and goggles"
+            ],
+            "what_to_verify": "Do the helmet and goggles maintain consistent shape, position, and occlusion relative to the skier’s head across all frames?",
+            "where_to_look": {
+              "timestamp": [
+                0.0,
+                4.75
+              ],
+              "spatial_hint": "skier's head and upper torso"
+            },
+            "domain": "headgear and accessory consistency",
+            "anomaly_definition": "An anomaly would be unexplained deformation, detachment, sliding, or inconsistent occlusion of the helmet or goggles relative to the head.",
+            "minimum_checks": [
+              "Compare the helmet outline and strap placement across early, middle, and late frames.",
+              "Track the goggles relative to the helmet and visible facial features during head turns.",
+              "Inspect the helmet-to-head boundary for discontinuities or inconsistent occlusion."
+            ]
+          },
+          {
+            "rubric_id": "r2",
+            "target_entities": [
+              "skier’s arm and hand holding camera"
+            ],
+            "what_to_verify": "Does the skier’s arm and hand maintain a consistent, physically plausible grip and orientation relative to the camera across all frames?",
+            "where_to_look": {
+              "timestamp": [
+                0.0,
+                4.75
+              ],
+              "spatial_hint": "skier’s right arm and hand"
+            },
+            "domain": "human motion and posture",
+            "anomaly_definition": "An anomaly would be an abrupt grip change, implausible joint configuration, detached hand, or inconsistent camera orientation relative to the arm.",
+            "minimum_checks": [
+              "Track the hand-to-camera connection across the sequence.",
+              "Compare elbow and wrist positions during the skier's small posture changes.",
+              "Check that the camera remains oriented toward the skier's face as the arm moves."
+            ]
+          },
+          {
+            "rubric_id": "r3",
+            "target_entities": [
+              "distant mountain ridgelines",
+              "snow-covered peaks"
+            ],
+            "what_to_verify": "Whether the background mountain contours retain coherent geometry as the skier moves.",
+            "where_to_look": {
+              "timestamp": [
+                0.0,
+                4.75
+              ],
+              "spatial_hint": null
+            },
+            "domain": "background geometry",
+            "anomaly_definition": "An anomaly would be unexplained warping, duplication, or discontinuous displacement of the distant mountain ridgelines.",
+            "minimum_checks": [
+              "Compare prominent ridge peaks at the beginning, middle, and end of the clip.",
+              "Check that the ridgelines remain spatially coherent relative to the sky and foreground slope."
+            ]
+          }
+        ],
+        "deprioritized": []
+      },
+      "audit": {
+        "findings": [
+          {
+            "rubric_ref": "r1",
+            "timestamp": [
+              0.0,
+              4.75
+            ],
+            "keyframe_time": null,
+            "bbox": null,
+            "frame_boxes": [],
+            "observation": "Helmet and goggles remain fixed in position and shape, with no warping, sliding, or inconsistent occlusion relative to the head.",
+            "counterevidence_tests": [],
+            "violated_rule": null,
+            "verification_result": "normal",
+            "evidence_strength": "weak",
+            "polarity": "neutral",
+            "evidence_type": "normal_evidence",
+            "knowledge_dependency": "visual_only"
+          },
+          {
+            "rubric_ref": "r2",
+            "timestamp": [
+              0.0,
+              4.75
+            ],
+            "keyframe_time": null,
+            "bbox": null,
+            "frame_boxes": [],
+            "observation": "Hand remains in a stable, continuous grip on the camera; arm angle and position change smoothly with body movement.",
+            "counterevidence_tests": [],
+            "violated_rule": null,
+            "verification_result": "normal",
+            "evidence_strength": "weak",
+            "polarity": "neutral",
+            "evidence_type": "normal_evidence",
+            "knowledge_dependency": "visual_only"
+          },
+          {
+            "rubric_ref": "r3",
+            "timestamp": [
+              0.0,
+              4.75
+            ],
+            "keyframe_time": null,
+            "bbox": null,
+            "frame_boxes": [],
+            "observation": "The distant mountain ridgelines retain consistent contours and relative placement throughout the clip.",
+            "counterevidence_tests": [],
+            "violated_rule": null,
+            "verification_result": "normal",
+            "evidence_strength": "moderate",
+            "polarity": "neutral",
+            "evidence_type": "normal_evidence",
+            "knowledge_dependency": "visual_only"
+          }
+        ],
+        "evidence_assessment": [
+          {
+            "rubric_ref": "r1",
+            "evidence_direction": "neutral",
+            "reason": "Helmet and goggles remain fixed in position and shape, with no warping, sliding, or inconsistent occlusion relative to the head."
+          },
+          {
+            "rubric_ref": "r2",
+            "evidence_direction": "neutral",
+            "reason": "Hand remains in a stable, continuous grip on the camera; arm angle and position change smoothly with body movement."
+          },
+          {
+            "rubric_ref": "r3",
+            "evidence_direction": "neutral",
+            "reason": "The distant mountain ridgelines retain consistent contours and relative placement throughout the clip."
+          }
+        ],
+        "aggregation": "Other inspected observations: Helmet and goggles remain fixed in position and shape, with no warping, sliding, or inconsistent occlusion relative to the head. Hand remains in a stable, continuous grip on the camera; arm angle and position change smoothly with body movement. The distant mountain ridgelines retain consistent contours and relative placement throughout the clip.",
+        "verdict": "real",
+        "confidence": "medium"
+      }
+    }
+  },
+  "parse_error": null,
+  "finish_reason": "stop"
+}

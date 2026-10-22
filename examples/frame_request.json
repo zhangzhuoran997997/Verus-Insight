@@ -1,0 +1,179 @@
+{
+  "messages": [
+    {
+      "content": "You are a strict JSON API. Return exactly one raw JSON object only. Do not include markdown, explanations, analysis, or think text. Start with '{' and end with '}'.",
+      "role": "system"
+    },
+    {
+      "content": [
+        {
+          "text": "Here are timestamped frames sampled from the same single video for analysis:\n<0.00 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<0.25 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<0.50 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<0.75 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<1.00 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<1.25 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<1.50 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<1.75 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<2.00 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<2.25 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<2.50 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<2.75 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<3.00 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<3.25 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<3.50 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<3.75 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<4.00 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<4.25 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<4.50 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "<4.75 seconds>",
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "text": "\nOutput strictly valid JSON only.",
+          "type": "text"
+        }
+      ],
+      "role": "user"
+    }
+  ],
+  "image_sha256": [
+    "16dbcc599ff60dc6f1bc8fb5041d1a3bbe4b7f7bd47fc386b4c05669b25df6be",
+    "2dc0b98532f69fa753da14c828b89dafd99cd94ee8f708c0a85ff1d3555eef88",
+    "7469ac734ddf5212e1e2f6d8eac41851d43896b7d2d0877a8b183a85ab3f211c",
+    "d1383f717d01ee047ab83777c2c6a3f9007f46c3f5a7eabf36f81a6d6ab406a3",
+    "9b577cb914883c79c0d2fd2877bab155380f6f43103718e42aa1a3a29a62a172",
+    "f16bd808339424c411e79e58fcee3d0fb5bbe81749795559ac92bc668dd9d91d",
+    "847d981e5be5d1a92cdaadeb085a5fed061aae2c30988b5e924c7689b2ed2ce5",
+    "a74e784d388747356f17f7c0c55e52651505df7edb9b5b5258420647bee4bd85",
+    "8e095022e77a6d67889172b2434a83d60d423969db93c018825e2953e0f797de",
+    "89da517e7a0ba17e83680d7feae75747b36715b36d6cf35fad8a16574f90a683",
+    "2eaddf59e45004028724e22fec3f16c390aa85771f269c42765cea67e3feac46",
+    "be7579d3820b1c9696e46ddabec6fc3e8cf3f8316cf51c15c7956fdaa08ab190",
+    "efbc91bc0d0b6458e9aac863971ec7bff3c0b79f2b3c129c2b9fedf0d113e140",
+    "bafa78f11962447cb0b93a71ecc6186649e3a5510532603eb3f32f152d71f5d3",
+    "5f2eae7bdefc1be0e489b9f1d61a9bf6de420b97603a14fff1fad8fe88123b38",
+    "ebbabfc9025581cd55b36af14d7c2520a49e99d93a15170dae6c15e2f40a971b",
+    "968dd28397a9d775095c406f80d39162226c8f389ac0de0184e8587415a1915a",
+    "ba15766f2c038f1b92e4660c22969891014baf9dfe2ef6496ade8686d9a9e1a7",
+    "f994abf75bb18e90ab2c9dc66d7b1ce9a05cd9f8a9c1989b1cc4152d77157ff7",
+    "3fc025f676ede853f1de2b7b05b921d116a9000a7e7229ffd88d5dd029e16ef7"
+  ]
+}

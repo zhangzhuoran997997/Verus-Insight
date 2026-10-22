@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verus-insight"
+version = "0.1.0"
+description = "Video artifact inspection with Verus-Insight."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+dependencies = ["av>=14,<17", "Pillow>=10", "huggingface-hub>=0.34,<2"]
+
+[project.optional-dependencies]
+transformers = ["torch==2.11.0", "torchvision==0.26.0", "transformers==5.12.1"]
+vllm = ["vllm==0.18.0", "transformers==4.57.6"]
+
+[project.urls]
+Homepage = "https://verus-team.github.io/Verus-Insight-Preview/"
+Repository = "https://github.com/zhangzhuoran997997/Verus-Insight"
+Issues = "https://github.com/zhangzhuoran997997/Verus-Insight/issues"
+Model = "https://huggingface.co/Verus-Team/Verus-Insight-8B"
+Dataset = "https://huggingface.co/datasets/Verus-Team/Verus-Bench"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+verus_insight = ["prompts/*.json"]
